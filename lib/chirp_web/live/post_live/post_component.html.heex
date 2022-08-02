@@ -1,0 +1,27 @@
+<div class="tweet" id={"post-#{@id}"}>
+  <div class="avatar"></div>
+  <div class="content">
+    <span class="username">@<%= @post.username %></span>
+    <span><%= @post.body %></span>
+    <div class="footer">
+      <div phx-click="like" phx-target={@myself}>
+        <span class="material-icons">favorite_border</span>
+        <span><%= @post.likes_count %></span>
+      </div>
+      <div phx-click="repost" phx-target={@myself}>
+        <span class="material-icons">repeat</span>
+        <span><%= @post.reposts_count %></span>
+      </div>
+      <div>
+        <%= live_patch to: Routes.post_index_path(@socket, :edit, @post) do %>
+          <span class="material-icons-outlined">mode_edit</span>
+        <% end %>
+      </div>
+      <div>
+        <%= link to: "#", phx_click: "delete", phx_value_id: @post.id, data: [confirm: "Are you sure?"] do %>
+          <span class="material-icons">delete</span>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

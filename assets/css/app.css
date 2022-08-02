@@ -201,10 +201,10 @@
 
 .footer div span:nth-child(2) {
   color: var(--secondary-text-color);
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
-.footer div span:nth-child(2):hover {
+.footer div:hover, .footer div:hover span{
   color: var(--ascending-color);
   cursor: pointer;
 }
@@ -212,6 +212,11 @@
 .material-icons, .material-icons-outlined {
   color: var(--secondary-text-color);
   font-size: 16px;
+}
+
+.material-icons:hover, .material-icons-outlined:hover {
+  color: var(--ascending-color);
+  cursor: pointer;
 }
 
 body {
