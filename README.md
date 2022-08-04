@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img alt="Application Demo" src="https://github.com/isabelamoraes/elixir-chirp/blob/main/demo/chirp.gif?raw=true" width="50%">
+  <img alt="Application Demo" src="https://github.com/isabelamoraes/elixir-chirp/blob/main/demo/chirp.gif?raw=true" width="80%">
 </p>
 
 ## Features
@@ -28,10 +28,10 @@ To clone and run this application, place from your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/isabelamoraes/chirp.git
+$ git clone https://github.com/isabelamoraes/elixir-chirp.git
 
 # Go into the repository
-$ cd chirp
+$ cd elixir-chirp
 
 # Install dependencies
 $ mix deps.get
